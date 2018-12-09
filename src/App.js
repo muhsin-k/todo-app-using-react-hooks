@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 
-import Todo from './components/todoitem/TodoItem';
+import TodoItem from './components/todoitem/TodoItem';
+
+import Header from './components/header/Header';
 
 function TodoForm({ addTodo }) {
   const [value, setValue] = useState('');
@@ -50,18 +52,28 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <div className="todo-list">
-        {todos.map((todo, index) => (
-          <Todo
-            key={index}
-            index={index}
-            todo={todo}
-            completeTodo={completeTodo}
-            removeTodo={removeTodo}
-          />
-        ))}
-        <TodoForm addTodo={addTodo} />
+    <div className="container ">
+      <div className="app">
+        <Header />
+        <div className="todo-list">
+          {todos.map((todo, index) => (
+            <TodoItem
+              key={index}
+              index={index}
+              todo={todo}
+              completeTodo={completeTodo}
+              removeTodo={removeTodo}
+            />
+          ))}
+          <TodoForm addTodo={addTodo} />
+        </div>
+      </div>
+      <div className="footer">
+        Built by{' '}
+        <a target="_blank" href="http://muhzi.com">
+          Muhsin.K
+        </a>
+        © 2018
       </div>
     </div>
   );

@@ -1,12 +1,38 @@
 .app {
-  background: #209cee;
+  background: white;
   padding: 30px;
   height: 100vh;
 }
 
 .todo-list {
-  background: #e8e8e8;
+  /* background: #e8e8e8;
   border-radius: 4px;
   padding: 5px;
-  max-width: 400px;
+  max-width: 400px; */
+  margin-top: 30px;
+  text-align: center;
+  padding: 0 14px;
+}
+
+.container {
+  width: 100%;
+  color: black;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+.bg-image {
+  background-image: url('https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=612621fd686897b4812287430c8be9db&auto=format&fit=crop&w=752&q=80');
+  height: 100vh;
+  background-blend-mode: lighten;
+  background-color: rgba(207, 220, 210, 0.31);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
 }

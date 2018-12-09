@@ -1,0 +1,80 @@
+.header {
+  background-color: transparent !important;
+}
+nav {
+  background-color: transparent !important;
+  color: black !important;
+}
+nav ul a {
+  color: black !important;
+}
+
+.brand-logo img {
+  height: 80px;
+}
+@media (min-width: 100px) {
+  .brand-logo {
+    left: 20% !important;
+  }
+}
+@media (min-width: 200px) {
+  .brand-logo {
+    left: 30% !important;
+  }
+}
+@media (min-width: 300px) {
+  .brand-logo {
+    left: 27% !important;
+  }
+}
+@media (min-width: 400px) {
+  .brand-logo {
+    left: 20% !important;
+  }
+}
+@media (min-width: 500px) {
+  .brand-logo {
+    left: 16% !important;
+  }
+}
+@media (min-width: 600px) {
+  .brand-logo {
+    left: 14% !important;
+  }
+}
+
+@media (min-width: 700px) {
+  .brand-logo {
+    left: 12% !important;
+  }
+}
+
+@media (min-width: 800) {
+  .brand-logo {
+    left: 10% !important;
+  }
+}
+
+@media (min-width: 900) {
+  .brand-logo {
+    left: 8% !important;
+  }
+}
+
+@media (min-width: 1000) {
+  .brand-logo {
+    left: 6% !important;
+  }
+}
+
+@media (min-width: 11000) {
+  .brand-logo {
+    left: 1% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .brand-logo {
+    left: 1% !important;
+  }
+}
