@@ -4,6 +4,7 @@
   border-radius: 5px;
   margin-top: 10px;
   background: linear-gradient(to right, #ff6378, #ff824e);
+  cursor: pointer;
 }
 
 .in-active-todo-item {

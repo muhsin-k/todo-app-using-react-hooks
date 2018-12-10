@@ -6,18 +6,24 @@ import TodoItem from './components/todoitem/TodoItem';
 import Header from './components/header/Header';
 
 function TodoForm({ addTodo }) {
-  const [value, setValue] = useState('');
+  const [value, setToDo] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
     if (!value) return;
     addTodo(value);
-    setValue('');
+    setToDo('');
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" className="input" value={value} onChange={e => setValue(e.target.value)} />
+      <input
+        type="text"
+        className="input"
+        placeholder="Add a todo item"
+        value={value}
+        onChange={e => setToDo(e.target.value)}
+      />
     </form>
   );
 }
@@ -25,12 +31,8 @@ function TodoForm({ addTodo }) {
 function App() {
   const [todos, setTodos] = useState([
     {
-      text: 'Learn about React',
-      isCompleted: false,
-    },
-    {
-      text: 'Meet friend for lunch',
-      isCompleted: false,
+      text: 'Buy iPhone charger',
+      isComplete: false,
     },
   ]);
 
@@ -41,7 +43,7 @@ function App() {
 
   const completeTodo = index => {
     const newTodos = [...todos];
-    newTodos[index].isCompleted = true;
+    newTodos[index].isComplete = true;
     setTodos(newTodos);
   };
 

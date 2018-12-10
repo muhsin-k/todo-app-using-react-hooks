@@ -8,7 +8,7 @@ export default function TodoItem({ todo, index, completeTodo, removeTodo }) {
       <div className="row">
         <div
           className="col s8 todo-active-text"
-          style={{ textDecoration: todo.isCompleted ? 'line-through' : '' }}
+          style={{ textDecoration: todo.isComplete ? 'line-through' : '' }}
         >
           {' '}
           {todo.text}
